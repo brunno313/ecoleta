@@ -47,9 +47,7 @@ const Home = () => {
             </Text>
             <Text style={styles.description}>
               Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente
-            </Text>
-          </View>
-        </View>
+   =
 
         <Void />
 
@@ -60,13 +58,7 @@ const Home = () => {
             value={uf}
             maxLength={2}
             autoCapitalize="characters"
-            autoCorrect={false}
-            onChangeText={setUf}
-          />
-          <TextInput
-            style={styles.input}
-            placeholder="Digite a Cidade"
-            value={city}
+            autoC=
             autoCorrect={false}
             onChangeText={setCity}
           />
@@ -76,11 +68,7 @@ const Home = () => {
               <Text>
                 <Icon name="arrow-right" color="#FFF" size={24} />
               </Text>
-            </View>
-            <Text style={styles.buttonText}>
-              Entrar
-            </Text>
-          </RectButton>
+=
         </View>
       </ImageBackground>
     </KeyboardAvoidingView>

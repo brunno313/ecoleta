@@ -2,10 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Image, Text, TouchableOpacity, ScrollView, Alert } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import { Feather as Icon } from '@expo/vector-icons';
-import { useNavigation, useRoute } from '@react-navigation/native'
-import Constants from 'expo-constants';
-import { SvgUri } from 'react-native-svg';
-import * as Location from 'expo-location';
+impor
 import api from '../../services/api';
 
 interface Item {
@@ -17,9 +14,7 @@ interface Item {
 interface Point {
   id: number;
   image: string;
-  image_url: string;
-  name: string;
-  latitude: number;
+  imag
   longitude: number;
 }
 
@@ -44,21 +39,15 @@ const Points = () => {
       const { status } = await Location.requestPermissionsAsync();
 
       if (status !== 'granted') {
-        Alert.alert('Ooops...', 'Precisamos de sua permissão para obter a localização');
-        return;
-      }
+
+
 
       const location = await Location.getCurrentPositionAsync();
-      const { latitude, longitude } = location.coords;
-
-      setInitialPosition([
-        latitude,
-        longitude
-      ]);
+      con
     }
 
     loadPosition();
-  }, []);
+
 
   useEffect(() => {
     api.get('points', {
