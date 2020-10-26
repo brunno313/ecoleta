@@ -39,6 +39,18 @@ const Home = () => {
           </View>
         </View>
 
+        <View style={styles.main}>
+          <Image source={require('../../assets/logo.png')} />
+          <View>
+            <Text style={styles.title}>
+              Seu marketplace de coleta de resíduos
+            </Text>
+            <Text style={styles.description}>
+              Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente
+   =
+
+        <Void />
+
         <View style={styles.footer}>
           <TextInput
             style={styles.input}
@@ -46,13 +58,7 @@ const Home = () => {
             value={uf}
             maxLength={2}
             autoCapitalize="characters"
-            autoCorrect={false}
-            onChangeText={setUf}
-          />
-          <TextInput
-            style={styles.input}
-            placeholder="Digite a Cidade"
-            value={city}
+            autoC=
             autoCorrect={false}
             onChangeText={setCity}
           />
@@ -62,11 +68,7 @@ const Home = () => {
               <Text>
                 <Icon name="arrow-right" color="#FFF" size={24} />
               </Text>
-            </View>
-            <Text style={styles.buttonText}>
-              Entrar
-            </Text>
-          </RectButton>
+=
         </View>
       </ImageBackground>
     </KeyboardAvoidingView>
